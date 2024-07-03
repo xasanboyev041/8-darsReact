@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.products-container {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.product-card h2 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  color: #666;
+  padding: 0 10px;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+.product-card button.liked {
+  background-color: red;
+}
+
+.liked-products {
+  flex: 1;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.liked-products h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.liked-product {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.liked-product img {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.liked-product h3 {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+  flex: 1;
+}
+
+.liked-product button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.liked-product button:hover {
+  background-color: #a71d2a;
+}
